@@ -5,8 +5,32 @@
 </head>
 
 <body>
-<h1>owo</h1>
+<h1>Welcome to the place to be FUCKING HELPED!</h1>
+
+
+<div class="section">
+  <div class="question">
+    <p id="question-text"></p>
+  </div>
+  <div class="answer">
+  
+  </div>
+</div>
+      
+
 <script>
-  window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  function capFirstLet(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
+  var query = window.location.href.split('?=')[1];
+  var query_arr = query.split('+');
+  var str = "";
+
+  query_arr.forEach(function(word) {
+    str = str + ' ' + capFirstLet(word);
+  });   
+
+  document.getElementById("question-text").innerHTML = str;
 </script>
 </body>
