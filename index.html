@@ -13,7 +13,9 @@
     <p id="question-text"></p>
   </div>
   <div class="answer">
-  
+    <p id="question-small"></p>
+    <p>We will go through all the necessary step together with full documentation so it's easier to understand. So, to get started, you need to proprelly setup a...</p>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Read More</a>
   </div>
 </div>
       
@@ -31,6 +33,7 @@
     str = str + ' ' + capFirstLet(word);
   });   
 
-  document.getElementById("question-text").innerHTML = str;
+  document.getElementById("question-text").innerHTML = str + "?";
+  document.getElementById("question-small").innerHTML = "Hello, welcome on our article on how to " + str.toLowerCase() + ".";
 </script>
 </body>
